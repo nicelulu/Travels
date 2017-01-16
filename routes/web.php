@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('admin', 'Admin\AdminController@getIndex');
+Route::get('admin/item', 'Admin\AdminController@anyItem');
+
+
+
+
